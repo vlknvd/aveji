@@ -1,0 +1,14 @@
+@font-face {
+    font-family: Roboto;
+    src: url('/src/fonts/Roboto-Regular.ttf') url("/src/fonts/Roboto-Medium.ttf");
+}
+
+@font-face {
+    font-family: Helvetica;
+    src: url('/src/fonts/helvetica_regular.otf') url("/src/fonts/helvetica_bold.otf");
+}
+
+$main-font: 'Roboto';
+$second-font: 'Helvetica';
+$font-color: #212529;
+$bg-color: #fff;

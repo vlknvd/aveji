@@ -1,0 +1,67 @@
+@use '../base/variables.scss' as *;
+
+.header {
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__logo {
+        width: 39px;
+        height: 41px;
+        padding: 7px;
+    }
+    &__content {
+        display: none;
+    }
+    &__button {
+        width: 24px;
+        height: 16px;
+        border: none;
+        background: url('/src/icons/burger.svg') no-repeat center / cover;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .header {
+        &__wrapper {
+            align-items: start;
+        }
+        &__logo {
+            width: 47px;
+            height: 50px;
+            padding: 12px;
+            svg {
+                width: 48px;
+                height: 51px;
+            }
+        }
+        &__content {
+            display: flex;
+            gap: 207px;
+        }
+        &__navigation-list {
+            li {
+                margin-top: 8px;
+                &:nth-child(1) {
+                    margin-top: 0;
+                }
+            }
+        }
+        &__navigation-link {
+            font-weight: 400;
+            font-size: 18px;
+            color: $font-color;
+            text-decoration: none;
+        }
+        &__phone {
+            font-weight: 400;
+            font-size: 18px;
+            color: $font-color;
+            text-decoration: none;
+        }
+        &__button {
+            display: none;
+        }
+    }
+}

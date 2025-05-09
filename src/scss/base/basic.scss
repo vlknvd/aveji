@@ -1,0 +1,58 @@
+@use './variables.scss' as *;
+
+h1,
+h2,
+h3,
+h4,
+h5,
+figure,
+p,
+ol,
+ul {
+    margin: 0;
+}
+
+ol[role="list"],
+ul[role="list"] {
+    list-style: none;
+    padding-inline: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-size: inherit;
+    font-weight: inherit;
+}
+
+img {
+    display: block;
+    max-inline-size: 100%;
+}
+
+input:focus, input:active {
+    border: none;
+    outline: none;
+}
+
+button, input, a {
+    cursor: pointer;
+}
+
+html {
+    font-family: $main-font;
+    scroll-behavior: smooth;
+    background-color: $bg-color;
+}
+
+.container {
+    padding: 0 16px;
+}
+
+@media screen and (min-width: 1440px) {
+    .container {
+        padding: 0 32px;
+    }
+}

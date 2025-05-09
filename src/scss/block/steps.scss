@@ -1,0 +1,63 @@
+@use '../base/variables.scss' as *;
+
+.steps {
+    padding-top: 38px;
+    &__info {
+        margin-top: 20px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 140%;
+        color: $font-color;
+    }
+    &__list {
+        margin-top: 28px;
+    }
+    &__item {
+        margin-top: 20px;
+        padding-bottom: 20px;
+        border-bottom: 1px solid #000;
+        p {
+            margin-top: 16px;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 140%;
+            color: $font-color;
+        }
+        &:nth-child(1) {
+            margin-top: 0;
+        }
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .steps {
+        padding-top: 120px;
+        &__wrapper {
+            display: grid;
+            grid-template-columns: 52% 48%;
+        }
+        &__info {
+            width: 50%;
+            margin-top: 12px;
+        }
+        &__list {
+            margin-top: 20px;
+        }
+        &__item {
+            margin-top: 0;
+            padding: 24px 0;
+            border-bottom: 1px solid #000;
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+
+            h3 {
+                width: 49%;
+            }
+            p {
+                width: 51%;
+                margin-top: 0;
+            }
+        }
+    }
+}

@@ -1,0 +1,13 @@
+@use './libs/modern-normalize.min.css';
+@use './base/basic.scss';
+@use './ui/titles.scss';
+
+@use './block/header.scss';
+
+@use './block/promo.scss';
+@use './block/about.scss';
+@use './block/steps.scss';
+@use './block/projects.scss';
+@use './block/feedback.scss';
+@use './block/form.scss';
+@use './block/footer.scss';

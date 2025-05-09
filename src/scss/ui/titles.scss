@@ -1,0 +1,36 @@
+@use '../base/variables.scss' as *;
+
+.title-h1 {
+    font-family: $second-font;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 120%;
+    color: $font-color;
+    text-transform: uppercase;
+}
+
+.title-h2 {
+    font-family: $second-font;
+    font-weight: 400;
+    font-size: 28px;
+    color: $font-color;
+}
+
+.title-h3 {
+    font-family: $second-font;
+    font-weight: 400;
+    font-size: 24px;
+    color: $font-color;
+}
+
+@media screen and (min-width: 1440px) {
+    .title-h1 {
+        font-size: 72px;
+    }
+    .title-h2 {
+        font-size: 48px;
+    }
+    .title-h3 {
+        font-size: 36px;
+    }
+}

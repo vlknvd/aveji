@@ -1,0 +1,117 @@
+.form {
+    padding-top: 48px;
+    &__img-web {
+        display: none;
+    }
+    &__text {
+        margin-top: 20px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 140%;
+        color: #000;
+    }
+    form {
+        margin-top: 20px;
+    }
+    &__input {
+        width: 100%;
+        height: 31px;
+        padding-bottom: 12px;
+        margin-top: 16px;
+        font-weight: 400;
+        font-size: 16px;
+        border: none;
+        border-bottom: 1px solid #212529;
+        &::placeholder {
+            color: #212529;
+        }
+        &:nth-child(1) {
+            margin-top: 0;
+        }
+        &:focus, &:active {
+            border: none;
+            background: transparent;
+            border-bottom: 1px solid #ddd7c0;
+        }
+    }
+    &__button {
+        padding: 10px;
+        margin-top: 20px;
+        width: 176px;
+        height: 46px;
+        background: #212529;
+        border: none;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 140%;
+        text-align: center;
+        color: #fff;
+        &:active {
+            background: #cbc6b2;
+            color: #212529;
+        }
+        &:hover {
+            background: #ddd7c0;
+            color: #212529;
+        }
+        &:disabled {
+            background: rgba(33, 37, 41, 0.5);
+            color: rgba(255, 255, 255, 0.5);
+        }
+    }
+    &__links {
+        display: flex;
+        gap: 8px;
+        margin-top: 28px;
+    }
+    &__link {
+        width: 121px;
+        height: 36px;
+        display: block;
+        
+        &-apple {
+            background: url('/src/icons/apple.svg') no-repeat center / 100%;
+        }
+        &-google {
+            background: url('/src/icons/google.svg') no-repeat center / 100%;
+        }
+    }
+    .just-validate-error-field {
+        border-bottom: 1px solid #e13a3a;
+    }
+    .just-validate-error-label{
+        display: none;
+    }
+    .just-validate-success-field {
+        border-bottom: 1px solid #f9c67b;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .form {
+        padding-top: 120px;
+        &__wrapper {
+            display: flex;
+            gap: 136px;
+        }
+        &__img-web {
+            display: block;
+        }
+        &__text {
+            margin-top: 32px;
+        }
+        form {
+            margin-top: 72px;
+            width: 81%;
+        }
+        &__button {
+            margin-top: 24px;
+        }
+
+        &__links {
+            display: flex;
+            gap: 8px;
+            margin-top: 28px;
+        }
+    }
+}
